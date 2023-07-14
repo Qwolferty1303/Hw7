@@ -19,60 +19,7 @@ console.log(exercise_1("dodo"));
 console.log(exercise_1("froggy"));
 console.log(exercise_1("grapes"));
 
-// Exercise 2
 
-function exercise_2(items, budget) {
-  const a = [];
-
-  for (const [b, c] of Object.entries(items)) {
-    const d = parseFloat(c.replace(/[^0-9.-]+/g, ""));
-    if (d <= parseFloat(budget)) {
-      a.push(b);
-    }
-  }
-
-  a.sort();
-
-  return a;
-}
-
-console.log(
-  exercise_2(
-    {
-      Water: "$1",
-      Bread: "$3",
-      TV: "$1,000",
-      Fertilizer: "$20",
-    },
-    "$300"
-  )
-);
-
-console.log(
-  exercise_2(
-    {
-      Apple: "$4",
-      Honey: "$3",
-      Fan: "$14",
-      Bananas: "$10",
-      Pan: "$100",
-      Spoon: "$2",
-    },
-    "$100"
-  )
-);
-
-console.log(
-  exercise_2(
-    {
-      Phone: "$999",
-      Speakers: "$300",
-      Laptop: "$5,000",
-      PC: "$1200",
-    },
-    "$1"
-  )
-);
 
 // Exercise 3
 
